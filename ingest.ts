@@ -16,7 +16,7 @@ export default pipeline({
     romanFolios(),
     asteriskBreaks(),
     letteredItems(),
-    contentsOutline({ scanned: true }),
+    contentsOutline({ scanned: true, centredMinor: true }),
     layoutPageJoins({ scanned: true }),
     quoteListRunOns(),
     pageBreakContinuations(),

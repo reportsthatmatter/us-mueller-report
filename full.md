@@ -907,8 +907,6 @@ Panel[QJJNIIPJMJQlt:J uiw• servers, in turn, relayed messages to a second set 
 
 The AMS Panel used to conti·?l X~A ent ~uring the DCCC and DNC intiusions was housed on a leased com uter located near An zona. 128
 
-(E)-2
-
 %%page 40%%
 
 The Arizona-based AMS Pan el also stored thousands of files containing keylogging sessions captured through X-Agent. These sessions were captured as GRU officers monitored DCCC and DNC employees' work on infected computers regularly between April 2016 and June 2016. Data captured in these keylogging sessions included passwords, internal collllllunications between employees, banking info1mation, an d sensitive personal info1mation.
@@ -2115,6 +2113,8 @@ Aven told the Office that he is one of approximately 50 wealthy Russian business
 
 According to Aven, at his Q4 2016 one-on-one meeting with Putin,[^981] Putin raised the prospect that the United States would impose additional sanctions on Russian interests, including sanctions against Aven and/or Alfa-Bank.[^982] Putin suggested that Aven needed to take steps to protect himself and Alfa-Bank.[^983] Aven also testified that Putin spoke of the difficulty faced by the Russian government in getting in touch with the incoming Trump Administration.[^984] According to Aven, Putin indicated that he did not know with whom formally to speak and generally did not know the people around the President-Elect.[^985]
 
+[Redacted: (b) (3)]
+
 %%page 147%%
 
 Aven [Redacted: (b) (3)] told Putin he would take steps to protect himself and the Alfa-Bank shareholders from potential sanctions, and one of those steps would be to tiy to reach out to the incoming Administi·ation to establish a line of communication .[^986] Aven described Putin responding with skepticism about Aven 's prospect for success.[^987] According to Aven, although Putin did not expressly direct him to reach out to the Tnunp Transition Team, Aven understood th at Putin expected him to tiy to respond to th e concerns he had raised.[^988] Aven 's effo1is are described in Volume I, Section IV.B .5, infra.
@@ -2225,7 +2225,9 @@ Administration .1054 Nader wrote to Dmitriev, "This guy [Prince] is designated b
 
 Dmitriev aiTived with his wife in the Seychelles on Januaiy 11, 2017, and checked into the Four Seasons Reso1i where Crown Prince Mohammed and Nader were staying.[^1058] Prince aiTived that sam e day.1059 Prince and Dmitriev met for the first time that afternoon in Nader's villa, with Nader present.[^1060] The initial meeting lasted approximately 30-45 minutes. 1061
 
-Prince described the eight years o t e O ama A 1strab on m negative tenns, an state that he was looking fo1ward to a new era of cooperation and conflict resolution .1063 According to Prince, he told Dmitriev that Bannon was effective if not conventional, and that Prince provided policy papers to Bannon .1064 llill[Redacted: (b) (3)]
+Prince described the eight years o t e O ama A 1strab on m negative tenns, an state that he was looking fo1ward to a new era of cooperation and conflict resolution .1063 According to Prince, he told Dmitriev that Bannon was effective if not conventional, and that Prince provided policy papers to Bannon .1064
+
+> [Redacted: (b) (3)] llill[Redacted: (b) (3)]
 
 1054 [Redacted: (b) (3)] topic of Russian interference in the 2016 election did not come up.
 
@@ -2567,11 +2569,11 @@ For that reason, this Office's focus in resolving the question of joint criminal
 
 The Office also did not charge any campaign official or associate with a conspiracy under Section 371's defraud clause. That clause criminalizes participating in an agreement to obstruct a lawful function of the U.S. government or its agencies through deceitful or dishonest means. See Dennis v. United States, 384 U.S. 855, 861 (1966); Hammerschmidt v. United States, 265 U.S. 182, 188 (1924); see also United States v. Concord Mgmt. & Consulting LLC, 347 F. Supp. 3d 38, 46 (D.D.C. 2018). The investigation did not establish any agreement among Campaign officials— or between such officials and Russia-linked individuals—to interfere with or obstruct a lawful function of a government agency during the campaign or transition period. And, as discussed in Volume I, Section V.A, supra, the investigation did not identify evidence that any Campaign official or associate knowingly and intentionally participated in the conspiracy to defraud that the Office charged, namely, the active-measures conspiracy described in Volume I, Section II, supra. Accordingly, the Office did not charge any Campaign associate or other U.S. person with conspiracy to defraud the United States based on the Russia-related contacts described in Section IV above.
 
-2. Potential Coordination: Foreign Agent Statutes (FARA and 18 U.S.C. § 951)
+### Potential Coordination: Foreign Agent Statutes (FARA and 18 U.S.C. § 951)
 
 The Office next assessed the potential liability of Campaign-affiliated individuals under federal statutes regulating actions on behalf of, or work done for, a foreign government.
 
-a. Governing Law
+#### Governing Law
 
 Under 18 U.S.C. § 951, it is generally illegal to act in the United States as an agent of a foreign government without providing notice to the Attorney General. Although the defendant must act on behalf of a foreign government (as opposed to other kinds of foreign entities), the acts need not involve espionage; rather, acts of any type suffice for liability. See United States v. Duran, 596 F.3d 1283, 1293-94 (11th Cir. 2010); United States v. Latchin, 554 F.3d 709, 715 (7th Cir. 2009); United States v. Dumeisi, 424 F.3d 566, 581 (7th Cir. 2005). An "agent of a foreign government" is an "individual" who "agrees to operate" in the United States "subject to the direction or control of a foreign government or official." 18 U.S.C. § 951(d).
 
@@ -3045,7 +3047,7 @@ Several features of the conduct we investigated distinguish it from typical obst
 
 Although the series of events we investigated involved discrete acts, the overall pattern of the President's conduct towards the investigations can shed light on the nature of the President's acts and the inferences that can be drawn about his intent. In particular, the actions we investigated can be divided into two phases, reflecting a possible shift in the President's motives. The first phase covered the period from the President's first interactions with Comey through the President's firing of Comey. During that time, the President had been repeatedly told he was not personally under investigation. Soon after the firing of Comey and the appointment of the Special Counsel, however, the President became aware that his own conduct was being investigated in an obstruction-of-justice inquiry. At that point, the President engaged in a second phase of conduct, involving public attacks on the investigation, non-public efforts to control it, and efforts in both public and private to encourage witnesses not to cooperate with the investigation. Judgments about the nature of the President's motives during each phase would be informed by the totality of the evidence.
 
-## STATUTORY AND CONSTITUTIONAL DEFENSES
+#### STATUTORY AND CONSTITUTIONAL DEFENSES
 
 The President's counsel raised statutory and constitutional defenses to a possible obstruction-of-justice analysis of the conduct we investigated. We concluded that none of those legal defenses provided a basis for declining to investigate the facts.
 
@@ -3057,7 +3059,7 @@ Constitutional defenses. As for constitutional defenses arising from the Preside
 
 Under applicable Supreme Court precedent, the Constitution does not categorically and permanently immunize a President for obstructing justice through the use of his Article II powers. The separation-of-powers doctrine authorizes Congress to protect official proceedings, including those of courts and grand juries, from corrupt, obstructive acts regardless of their source. We also concluded that any inroad on presidential authority that would occur from prohibiting corrupt acts does not undermine the President's ability to fulfill his constitutional mission. The term "corruptly" sets a demanding standard. It requires a concrete showing that a person acted with an intent to obtain an improper advantage for himself or someone else, inconsistent with official duty and the rights of others. A preclusion of "corrupt" official action does not diminish the President's ability to exercise Article II powers. For example, the proper supervision of criminal law does not demand freedom for the President to act with a corrupt intention of shielding himself from criminal punishment, avoiding financial liability, or preventing personal embarrassment. To the contrary, a statute that prohibits official action undertaken for such corrupt purposes furthers, rather than hinders, the impartial and evenhanded administration of the law. It also aligns with the President's constitutional duty to faithfully execute the laws. Finally, we concluded that in the rare case in which a criminal investigation of the President's conduct is justified, inquiries to determine whether the President acted for a corrupt motive should not impermissibly chill his performance of his constitutionally assigned duties. The conclusion that Congress may apply the obstruction laws to the President's corrupt exercise of the powers of office accords with our constitutional system of checks and balances and the principle that no person is above the law.
 
-## CONCLUSION
+#### CONCLUSION
 
 Because we determined not to make a traditional prosecutorial judgment, we did not draw ultimate conclusions about the President's conduct. The evidence we obtained about the President's actions and intent presents difficult issues that would need to be resolved if we were making a traditional prosecutorial judgment. At the same time, if we had confidence after a thorough investigation of the facts that the President clearly did not commit obstruction of justice, we would so state. Based on the facts and the applicable legal standards, we are unable to reach that judgment. Accordingly, while this report does not conclude that the President committed a crime, it also does not exonerate him.
 

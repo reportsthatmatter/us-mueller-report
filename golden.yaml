@@ -1,0 +1,101 @@
+# Golden pages: ground truth for this report, read off the PDF page image and checked by `pnpm ingest verify`.
+# Format and rules: @rtm/ingest src/golden.ts and the site's docs/quality-harness.md ("Golden pages").
+# A page marked xfail is a known pipeline defect: it stays red here, verify stays green, and the bead says why.
+# Printed page numbers restart in Volume II; `volume` says which.
+pages:
+  # A born-digital Volume I page: a paragraph run on from p.80, a lettered subheading (bold italic, "a."), notes 394-399.
+  - pdf: 89
+    printed: 81
+    verified_by: "Claude (Opus 5.5), 2026-10-09, against the page image"
+    features: [ordinary, H, F]
+    blocks:
+      - paragraph: {start: "Papadopoulos shared information about Russian \"dirt\"", end: "meeting never came to pass."}
+      - heading: "Origins of Campaign Work"
+        level: 4
+      - paragraph: {start: "In March 2016, Papadopoulos became a", end: "Republican presidential candidate Ben Carson.", notes: [395, 396, 397]}
+      - paragraph: {start: "Although Carson remained in the presidential", end: "in London to begin work.", notes: [398, 399, 400, 401]}
+    footnotes: [394, 395, 396, 397, 398, 399]
+    markers: [394, 395, 396, 397, 398, 399]
+  # Volume II: a lettered section heading ("B."), then six items "(a)" to "(f)" set with a hanging indent and one space after the letter.
+  - pdf: 17
+    volume: 2
+    printed: 12
+    verified_by: "Claude (Opus 5.5), 2026-10-09, against the page image"
+    features: [H, lists]
+    blocks:
+      - paragraph: {start: "The omnibus clause of 18 U.S.C.", end: "2017) (internal quotation marks omitted)."}
+      - heading: "Investigative and Evidentiary Considerations"
+        level: 3
+      - paragraph: {start: "After the appointment of the Special", end: "of justice involving the President:"}
+      - paragraph: {start: "(a) The President's January 27, 2017", end: "Flynn and the Russian Ambassador;"}
+      - paragraph: {start: "(b) The President's February 14, 2017", end: "pursue an investigation of Flynn;"}
+      - paragraph: {start: "(c) The President's private requests to", end: "President regarded as a cloud;"}
+      - paragraph: {start: "(d) The President's outreach to the", end: "about the FBI's Russia investigation;"}
+      - paragraph: {start: "(e) The President's stated rationales for", end: "factor in Comey's termination; and"}
+      - paragraph: {start: "(f) The President's reported involvement in", end: "derogatory information about Hillary Clinton."}
+      - paragraph: {start: "Taking into account that information and", end: "obstruction-of-justice issues involving the President."}
+      - paragraph: {start: "Many of the core issues in", end: "a substantial amount of evidence."}
+    markers: []
+  # Volume II p.50: the page opens mid-sentence ("language in the Code…", run on from p.49); its note block opens on the
+  # run-over of note 285 from p.49, which belongs to the note, not to the paragraph above it (layoutRunOvers).
+  - pdf: 55
+    volume: 2
+    printed: 50
+    verified_by: "Claude (Opus 5.5), 2026-10-09, against the page image"
+    features: [F, P]
+    blocks:
+      - paragraph: {start: "Shortly after Sessions announced his recusal,", end: "/ Serious concerns about obstruction.\"", notes: [289, 290]}
+      - paragraph: {start: "On March 3, the day after", end: "work on the Trump Campaign.", notes: [291, 292, 293, 294, 295, 296, 297, 298, 299, 300]}
+    footnotes: [286, 287, 288, 289, 290, 291, 292, 293, 294]
+    markers: [286, 287, 288, 289, 290, 291, 292, 293, 294]
+    must_not_contain: ["applicable of James B. Comey"]
+  # Volume II's executive summary: a centred small-capital subhead the contents does not list, set as a subhead inside
+  # the summary, not a section of its own (contentsOutline centredMinor).
+  - pdf: 12
+    volume: 2
+    printed: 7
+    verified_by: "Claude (Opus 5.5), 2026-10-09, against the page image"
+    features: [H]
+    blocks:
+      - paragraph: {start: "Overarching factual issues. We did not", end: "statements about the President's conduct."}
+      - paragraph: {start: "Several features of the conduct we", end: "system's integrity is the same."}
+      - paragraph: {start: "Although the series of events we", end: "the totality of the evidence."}
+      - heading: "STATUTORY AND CONSTITUTIONAL DEFENSES"
+        level: 4
+      - paragraph: {start: "The President's counsel raised statutory and", end: "declining to investigate the facts."}
+      - paragraph: {start: "Statutory defenses. Consistent with precedent and", end: "related to a federal crime."}
+    markers: []
+  # A scanned Volume I page (page image with OCR): a numbered heading the OCR misspells ("1. Trnmp Tower Moscow Project"),
+  # read from the contents' spelling, and a lettered subheading. Note 293 is withheld whole ("293 (b) (3)" in a box) and
+  # is not read as a note, so its marker after "Robert Goldstone." stays bare.
+  - pdf: 75
+    printed: 67
+    verified_by: "Claude (Opus 5.5), 2026-10-09, against the page image"
+    features: [H, F, scan, redaction]
+    xfail: reportsthatmatter-vs2x
+    xfail_only: [blocks, footnotes, markers]
+    blocks:
+      - heading: "Trump Tower Moscow Project"
+        level: 3
+      - paragraph: {start: "The Tnunp Organization has pursued an", end: "th e project was located.", notes: [289]}
+      - paragraph: {start: "Between at least 2013 and 2016,", end: "executives in the Trnmp Organization.", notes: [290]}
+      - heading: "Trump Tower Moscow Venture with the Crocus Group (2013-2014)"
+        level: 4
+      - paragraph: {start: "The Trnmp Organization an d the", end: "assistan ce of Robert Goldstone.", notes: [291, 292, 293]}
+      - paragraph: {start: "In December 2013, Kaveladze and Tnunp", end: "during January and February 2014.", notes: [294, 295, 296]}
+    footnotes: [289, 290, 291, 292, 293]
+    markers: [289, 290, 291, 292, 293]
+  # A scanned, heavily redacted Volume I page: two paragraphs, then two redaction boxes the OCR did not read (their
+  # white labels "(b)(3), (b)(7)(A), (b)(7)(E)" are not in the text layer). The OCR breaks the first paragraph at
+  # "The middle / servers" round a box, and reads raised digits out of the boxes.
+  - pdf: 47
+    printed: 39
+    verified_by: "Claude (Opus 5.5), 2026-10-09, against the page image"
+    features: [scan, redaction, F]
+    xfail: reportsthatmatter-vs2x
+    xfail_only: [blocks, markers]
+    blocks:
+      - paragraph: {start: "To operate X-Agent and X-Tunnel on", end: "operations on the DNC/DCCC networks.", notes: [126, 127]}
+      - paragraph: {start: "The AMS Panel used to conti·?l", end: "uter located near An zona.", notes: [128]}
+    footnotes: [126, 127, 128, 129]
+    markers: [126, 127, 128, 129]

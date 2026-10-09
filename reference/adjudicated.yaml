@@ -1,0 +1,389 @@
+report: us-mueller-report
+adjudicated: 2026-10-09
+by: "Claude (Opus 5.5) subagent, blind to the rules' call, reading the page images; every disagreement with the pipeline re-read"
+method: "Mini-reference for a report with no clean edition (38s.15; scripts/ingest/pagebreak-sample.ts, `pnpm ingest referee draft`). Population: every page turn, the last line of running text on the old page and the first on the new (pdftohtml -xml; notes, running heads and folios left out). 15 drawn by a seeded shuffle (stratum random), then 5 from each confidence tier of the layout rules at @rtm/ingest v0.21.0 (stratum tier-low/medium/high; a short tier topped up from the others). Each break was answered from the rendered page images (the foot of the old page, the head of the new one), blind to the rules' call: does a new block (paragraph, bullet, numbered paragraph, quotation, heading) start between the two lines, or does the block run on? prev and next are the running-text lines either side; when notes, a caption or a heading stand between, the verdict says whether the paragraph's text continues on the new page, and `between` names what stands between. `set` assigns the break to development or held-out (alternating within each stratum, seeded); `tier` and `rule` are the rules' call at v0.21.0 when drawn."
+seed: "38s.15"
+breaks:
+  - page: 12
+    volume: 1
+    prev: "that guided that investigation. "
+    next: "EXECUTIVE SUMMARY TO VOLUME I "
+    verdict: split
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "split: font changes across the break"
+    between: none
+    image: true
+    drawn: "high; that guided that investigation. / The  Internet  Research Agency  (IRA)  c"
+    note: "next_id corrected to the heading 'EXECUTIVE SUMMARY TO VOLUME I' (headings are running text); prev ends a finished paragraph and a new section starts"
+  - page: 17
+    volume: 1
+    prev: "so, whether admissible evidence would probably be sufficient to obtain and sustain a conviction; "
+    next: "and whether prosecution would serve a substantial federal interest that could not be adequately "
+    verdict: join
+    stratum: tier-low
+    set: dev
+    tier: low
+    rule: "R2: finished, but a full justified line and a flush next line"
+    between: none
+    image: true
+    note: "sentence unfinished at foot ('...conviction;'), continues flush"
+  - page: 19
+    volume: 1
+    prev: "light on (or cast in a new light) the events described in the report.   "
+    next: "I. THE SPECIAL COUNSEL’S INVESTIGATION"
+    verdict: split
+    stratum: random
+    set: dev
+    tier: high
+    rule: "split: next opens on a label"
+    between: none
+    image: true
+    drawn: "high; ght) the events described in the report. / On May 17, 2017, Deputy Attorney General"
+    note: "next_id corrected to heading 'I. THE SPECIAL COUNSEL'S INVESTIGATION' (id 2), which is the first running line"
+  - page: 48
+    volume: 1
+    prev: "on a leased com uter located near          An zona. 128"
+    next: "The  Arizona-based AMS Panel also  stored  thousands of files  containing  keylogging "
+    verdict: split
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "split: font changes across the break"
+    between: notes
+    image: true
+    above: "(E)-2 "
+    drawn: "high; 129 Netyksho Indictment ,i 24(b / The  Arizona-based AMS Panel also  store"
+    note: "the wholly black redaction box at the foot sits in the body above the note rule, so it is the last running line; it has no id in old_lines, prev_id 20 is a best guess. New page opens with an indented paragraph. old body line not in old_lines; id is a best guess from counting footnote lines; prev corrected by the integrating agent: the drawn line was a margin redaction label, (b)(7)(E)-2; the last line of text above the redaction boxes is this one"
+  - page: 67
+    volume: 1
+    prev: "with  him  that  day—to  reach  Assange  immediately.244    Corsi  claimed  that  the  pressure  was"
+    next: "enormous and recalled telling the conference call the Access Hollywood tape was coming.245  Corsi"
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; Assange.  Corsi 11/1/18 302, at 6. / enormous and recalled telling the confer"
+    note: "body line 'Corsi claimed that the pressure was' is unfinished and continues 'enormous...'; drawn prev was a footnote line, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 68
+    volume: 1
+    prev: "the password for an unlaunched website focused on Trump’s “unprecedented and dangerous” ties"
+    next: "to  Russia, PutinTrnmp.org.252 WikiLeaks  publicly  tweeted: \" 'Let's bomb Iraq' Progress  for "
+    verdict: join
+    stratum: tier-high
+    set: held-out
+    tier: high
+    rule: "split: font changes across the break"
+    between: notes
+    image: true
+    drawn: "high; ifteen minutes starting at approximately / to  Russia, PutinTrnmp.org.252 WikiLeaks"
+    note: "body line ends 'focused on Trump's unprecedented and dangerous ties' mid-sentence, continues 'to Russia'; drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines; prev corrected by the integrating agent against the text layer: the reader’s guessed line id was a line higher up"
+  - page: 116
+    volume: 1
+    prev: "Afghanistan and Iraq and the person who had introduced Trump before the April 27, 2016 foreign-"
+    next: "policy speech.642 Khalilzad also met with Sessions one-on-one separately from the dinners.643 At"
+    verdict: join
+    stratum: random
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; rt 2/9/18 302, at 9-10; Khalilzad 1/9/18 / policy speech.642 Khalilzad also met wit"
+    note: "body ends 'foreign-' hyphenated, continues 'policy speech'; drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 145
+    volume: 1
+    prev: "Those  emails referenced \"internal  polling,\"  described  the status of the  Trnmp Campaign  and "
+    next: "Manafo1i's role in  it and assessed Trnmp's prospects for "
+    verdict: join
+    stratum: random
+    set: dev
+    tier: high
+    rule: "split: font changes across the break"
+    between: notes
+    image: true
+    drawn: "high; stanced from the Campaign at that point. / Manafo1i's role in  it and assessed Trnm"
+    note: "body ends 'status of the Trump Campaign and' mid-sentence, continues 'Manafort's role'; drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 151
+    volume: 1
+    prev: "found  in  Kilimnik's DMP email  account.950 In that December 8 email, which Manafo1t "
+    next: "acknowledged having read,951 Kilimnik wrote, \"[a]ll that is required to  strut the process is a ve1y "
+    verdict: join
+    stratum: tier-high
+    set: dev
+    tier: high
+    rule: "split: font changes across the break"
+    between: notes
+    image: true
+    drawn: "high; Kilimnik & Patten, at 1-2. / acknowledged having read,951 Kilimnik wr"
+    note: "body ends 'In that December 8 email, which Manafort' mid-sentence, continues 'acknowledged having read'; drawn prev was a footnote/redaction box, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 160
+    volume: 1
+    prev: "and inner circle\"- a reference to Prince-and that he had  spoken at length and positively about "
+    next: "Dmitriev.1040 Nader  told Dmitriev  that the  people he met  had asked  for  Dmitriev's bio, and "
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "split: font changes across the break"
+    between: notes
+    image: true
+    drawn: "high; 1035 Prince 5/3/18 302, at 3; (b)  (3) / Dmitriev.1040 Nader  told Dmitriev  that"
+    note: "body ends 'spoken at length and positively about' mid-sentence, continues 'Dmitriev.'; drawn prev was a footnote, corrected to id 31"
+  - page: 183
+    volume: 1
+    prev: "at large. "
+    next: "Although  members  of  the  IRA  had contact  with  individuals  affiliated  with  the  Trump"
+    verdict: split
+    stratum: tier-high
+    set: dev
+    tier: high
+    rule: "split: finished"
+    between: notes
+    image: true
+    above: "ongoing before the U.S. District Court for the District of Columbia.  The other defendants remain "
+    drawn: "high;  Attorney General before the indictment. / Although  members  of  the  IRA  had con"
+    note: "drawn prev was footnote 1276; corrected to body line 'at large.' which ends the paragraph; new page starts an indented paragraph"
+  - page: 201
+    volume: 1
+    prev: "Clinton in late April 2016, more than a month after Papadopoulos had joined the Campaign and "
+    next: "been publicly announced by candidate Trump.  Statement of Offense ¶¶ 25-26, United States v. "
+    verdict: join
+    stratum: tier-low
+    set: dev
+    tier: low
+    rule: "R1: unfinished, next line flush"
+    between: none
+    image: true
+    note: "sentence unfinished at foot ('...joined the Campaign and'), continues 'been publicly announced'"
+  - page: 203
+    volume: 1
+    prev: "call to relay the substance of his conversation with Kislyak. See F~ynn Statement ofOffense ~ . "
+    next: "Second, Flynn made false statements about calls he had previously made to representatives"
+    verdict: split
+    stratum: random
+    set: dev
+    tier: high
+    rule: "split: font changes across the break"
+    between: none
+    image: true
+    note: "last body line ends 'Statement of Offense ¶ 3.' (the '3' is split into id 35); new page opens with an indented paragraph 'Second, ...'"
+  - page: 3
+    volume: 2
+    prev: "1. Attorney General Sessions Recuses From the Russia Investigation..................... 48"
+    next: "2. FBI Director Comey Publicly Confirms the Existence of the Russia "
+    verdict: split
+    stratum: tier-high
+    set: dev
+    tier: high
+    rule: "split: next opens on a label"
+    between: none
+    image: true
+    note: "table-of-contents entries; new entry '2. FBI Director Comey...' starts a new block (id 2 is the header rule line)"
+  - page: 12
+    volume: 2
+    prev: "suggested that his family members had committed crimes. "
+    next: "Overarching factual issues.  We did not make a traditional prosecution decision about "
+    verdict: split
+    stratum: random
+    set: dev
+    tier: high
+    rule: "split: finished"
+    between: none
+    image: true
+    note: "paragraph ends at foot; new page opens with indented run-in heading paragraph 'Overarching factual issues.'"
+  - page: 15
+    volume: 2
+    prev: "must be to pending “judicial or grand jury proceedings.” United States v. Aguilar, 515 U.S. 593, "
+    next: "599 (1995).  In Section 1505, the nexus can include a connection to a “pending” federal agency "
+    verdict: join
+    stratum: tier-medium
+    set: held-out
+    tier: medium
+    rule: "R1: unfinished, next line flush (a bare number)"
+    between: none
+    image: true
+    note: "sentence unfinished ('515 U.S. 593,'), continues '599 (1995).' flush"
+  - page: 49
+    volume: 2
+    prev: "ask for immunity in that this is a witch hunt (excuse for big election loss), by media & Dems, of "
+    next: "historic proportion!”266  In late March or early April, the President asked McFarland to pass a"
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; 8/18 302, at 9; Flynn 1/19/18 302, at 9. / historic proportion!”266  In late March "
+    note: "new page first line 'historic proportion!'' is flush and lowercase, a continuation mid-sentence; old body line is above the image and not in old_lines, id is a best guess. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 55
+    volume: 2
+    prev: "States.”285 Sessions believed the decision to recuse was not a close call, given the applicable"
+    next: "language in the Code of Federal Regulations (CFR), which Sessions considered to be clear and"
+    verdict: join
+    stratum: tier-high
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; General with respect to any matters from / language in the Code of Federal Regulati"
+    note: "new page opens lowercase 'language in the Code of Federal Regulations', continuing the sentence from the old page body (above the image, not in old_lines; id is a rough guess, drawn prev was a footnote). old body line not in old_lines; id is a best guess from counting footnote lines; prev corrected by the integrating agent against the text layer: the reader’s guessed line id was a line higher up"
+  - page: 71
+    volume: 2
+    prev: "Comey.416 The President read aloud the first paragraphs of the termination letter he wrote with "
+    next: "Miller  and  conveyed  that  the  decision  had  been  made  and  was  not up  for  discussion.417    The"
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; 02, at 6; Eisenberg 11/29/17 302, at 13. / Miller  and  conveyed  that  the  decisi"
+    note: "body ends 'wrote with', continues 'Miller and conveyed'; drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 72
+    volume: 2
+    prev: "Rosenstein to discuss Comey.426  The President told the group that he had watched Comey’s May "
+    next: "3 testimony over the weekend and thought that something was “not right” with Comey.427  The"
+    verdict: join
+    stratum: tier-medium
+    set: dev
+    tier: medium
+    rule: "R1: unfinished, next line flush (a bare number)"
+    between: notes
+    image: true
+    drawn: "medium; at 14; see Gauhar-000057 (Gauhar 5/16/17 / 3 testimony over the weekend and thought"
+    note: "body ends 'he had watched Comey's May' (visible on the top of the page 71 render in case 19), continues '3 testimony'; drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 100
+    volume: 2
+    prev: "discussed, Sessions had no intention of resigning.641 Hunt asked Priebus what the President would "
+    next: "accomplish by firing Sessions, pointing out there was an investigation before and there would be "
+    verdict: join
+    stratum: random
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; 302, at 23-24; Hunt 7/21/17 Notes, at 1. / accomplish by firing Sessions, pointing "
+    note: "new page opens lowercase 'accomplish by firing Sessions', continuing the old page's body sentence (above image); drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 109
+    volume: 2
+    prev: "reporting.718 Corallo  also  worked  with  Circa  News  on  a  story  published  an  hour  later  that "
+    next: "questioned  whether  Democratic  operatives  had  arranged  the  June  9  meeting  to  create  the"
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; York Times (July 8, 2017). / questioned  whether  Democratic  operati"
+    note: "body ends 'published an hour later that', continues 'questioned whether'; drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 136
+    volume: 2
+    prev: "is indeed.”908"
+    next: "Analysis "
+    verdict: split
+    stratum: tier-high
+    set: held-out
+    tier: high
+    rule: "split: font changes across the break"
+    between: notes
+    image: true
+    above: "like he’s defending himself very well.  But you have to get rid of the Russia witch hunt because it "
+    drawn: "high; ith President Trump, CBS (Feb. 3, 2019). / In analyzing the President’s conduct tow"
+    note: "body paragraph ends 'is indeed.'908'; new page opens with centered heading 'Analysis' (id 2), corrected next_id; drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 142
+    volume: 2
+    prev: "March or April 2016, Trump asked Cohen if anything was happening in Russia.929 Cohen also "
+    next: "recalled briefing Donald Trump Jr. in the spring—a conversation that Cohen said was not “idle "
+    verdict: join
+    stratum: tier-high
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; ts, at 24) (testimony of Michael Cohen). / recalled briefing Donald Trump Jr. in th"
+    note: "new page opens lowercase 'recalled briefing Donald Trump Jr.', continuing the old page body sentence (above image); drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 155
+    volume: 2
+    prev: "discussion of travel to Russia in connection with it. I do not remember discussing it with "
+    next: "anyone else at the Trump Organization, although it is possible. I do not recall being aware"
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; nses of Donald J. Trump (Nov. 20, 2018). / anyone else at the Trump Organization, a"
+    note: "block quotation of the President's answers is unfinished ('I do not remember discussing it with') and continues at the same quote indent ('anyone else...'); drawn prev was a footnote, corrected. old body line not in old_lines; id is a best guess from counting footnote lines"
+  - page: 159
+    volume: 2
+    prev: "and Putin during the United Nations General Assembly, and Cohen believed it was a decision of"
+    next: "the JDA to delete the sentence, “The building project led me to make limited contacts with Russian"
+    verdict: join
+    stratum: tier-high
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "high; nal Counsel to Special Counsel’s Office. / the JDA to delete the sentence, “The bui"
+    note: "body ends 'Cohen believed it was a decision of', continues 'the JDA to delete'; drawn prev 39 was footnote continuation, corrected to id 37"
+  - page: 160
+    volume: 2
+    prev: "with the government investigations.  "
+    next: "c. Intent.  In  analyzing  the  President’s  intent  in  his  actions towards  Cohen  as  a"
+    verdict: split
+    stratum: random
+    set: dev
+    tier: high
+    rule: "split: next opens on a label"
+    between: none
+    image: true
+    note: "new page opens with list label paragraph 'c. Intent.' (id 4; ids 0-3 are a stray '----', header and rule)"
+  - page: 169
+    volume: 2
+    prev: "of § 1503 and the other provisions of § 1503 itself.”).  But given that Sections 1503, 1505, and "
+    next: "1519 each reach conduct that Section 1512(c)(2) does not, the overlap provides no reason to give "
+    verdict: join
+    stratum: tier-medium
+    set: held-out
+    tier: medium
+    rule: "R1: unfinished, next line flush (a bare number)"
+    between: none
+    image: true
+    note: "sentence unfinished ('Sections 1503, 1505, and'), continues '1519 each reach'"
+  - page: 180
+    volume: 2
+    prev: "personal conduct while evading ordinary political checks and balances, even the highly limited "
+    next: "regulation imposed by the obstruction statutes could possibly intrude too deeply on the President’s "
+    verdict: join
+    stratum: tier-high
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: none
+    image: true
+    note: "sentence unfinished ('even the highly limited'), continues 'regulation imposed'"
+  - page: 186
+    volume: 2
+    prev: "President—accords with the fundamental principle of our government that “[n]o [person] in this "
+    next: "country is so high that he is above the law.” United States v. Lee, 106 U.S. 196, 220 (1882); see "
+    verdict: join
+    stratum: tier-low
+    set: held-out
+    tier: low
+    rule: "R1: unfinished, next line flush"
+    between: none
+    image: true
+    note: "quotation unfinished ('in this'), continues 'country is so high...'"

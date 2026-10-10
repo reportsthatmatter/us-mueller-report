@@ -1,0 +1,30 @@
+{
+  "name": "us-mueller-report",
+  "title": "Report on the Investigation into Russian Interference in the 2016 Presidential Election (Special Counsel Robert S. Mueller, III, March 2019), Volumes I and II",
+  "licenses": [
+    {
+      "name": "public-domain",
+      "title": "Public domain: a work of the U.S. Government (17 U.S.C. 105)."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Volume I of II, as the Department of Justice now publishes it: the FOIA release with fewer redactions (created 2 November 2020, modified 2 February 2022; 207 pp.)",
+      "path": "archive/report_volume1.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 24409776,
+      "hash": "sha256:0df965b7b0b8835311715f15dbf50cba371d06114ed8eebdf1a246a3c28ce3d0",
+      "sources": [{ "web": "https://www.justice.gov/storage/report_volume1.pdf" }]
+    },
+    {
+      "title": "Volume II of II, as the Department of Justice now publishes it: the FOIA release with fewer redactions (modified 19 June 2020; 187 pp.)",
+      "path": "archive/report_volume2.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 4610644,
+      "hash": "sha256:67bffcdcb98bc3dacad83f8c11992038218b110c9ad8fc225322a76a8ff69e34",
+      "sources": [{ "web": "https://www.justice.gov/storage/report_volume2.pdf" }]
+    }
+  ]
+}

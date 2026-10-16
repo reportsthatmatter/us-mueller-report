@@ -4,6 +4,6 @@
   "type": "module",
   "description": "Source archive and ingestion definition for: Report on the Investigation into Russian Interference in the 2016 Presidential Election (the Mueller Report)",
   "dependencies": {
-    "@rtm/ingest": "github:reportsthatmatter/ingest#v0.27.0"
+    "@rtm/ingest": "github:reportsthatmatter/ingest#v0.28.0"
   }
 }

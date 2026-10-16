@@ -41,6 +41,10 @@ Versions. The report has been released in several versions (the dates below are 
 
 Redactions. Every black box in these releases prints, in white, the FOIA exemptions it was withheld under: (b)(3) (withheld under a statute; in this report, grand-jury material under Fed. R. Crim. P. 6(e)), (b)(6) and (b)(7)(C) (personal privacy), (b)(7)(A) (pending enforcement proceedings, the "Harm to Ongoing Matter" of the 2019 release) and (b)(7)(E) (investigative techniques). The margin beside each box repeats the codes with a processing number ("(b)(3)-1"). The text keeps each box as `[Redacted: (b) (3)]`, with the printed codes as the box prints them, and drops the margin labels (`foiaRedactions` in `@rtm/ingest`; decision record `docs/decisions/0019-redactions.md` in the site repo).
 
+## Licence
+
+Text of the report: Public domain: a work of the United States Government (17 U.S.C. § 105). Our markup, processing and editorial additions: CC BY 4.0. Code: MIT. Evidence, caveats and the full statement are in [LICENSE](LICENSE); the MIT text is in [LICENSE-MIT](LICENSE-MIT).
+
 ## Build
 
 `ingest.ts` declares how the report is turned into Markdown. Rebuild from the site repo with `pnpm ingest run us-mueller-report`. `fidelity.md` lists the words the pipeline flagged for review; `reference/adjudicated.yaml` holds 30 page breaks decided from the page images (a mini-reference: there is no clean edition to score against); `golden.yaml` holds pages whose structure was checked against the page image.

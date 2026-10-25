@@ -68,8 +68,9 @@ export default pipeline({
     // "U.S. Department of Justice" / "Attorney Work Product // May Contain Material Protected Under
     // Fed. R. Crim. P. 6(e)" heads every page.
     runningFurniture(),
-    // Note markers are raised digits ("operating systems).124", Vol I p.38).
-    layoutMarkers(),
+    // Note markers are raised digits ("operating systems).124", Vol I p.38). scanned: the OCR pages raise a
+    // marker's digits one or two at a time ("sanctions.1262" as "1", "2", "6", "2", Vol I p.172).
+    layoutMarkers({ scanned: true }),
     // A note's tail at the head of the next page's note block, in the notes' 16pt under an 18pt body
     // (note 285's "of James B. Comey…", Vol II p.50), belongs to the note, not the body's last paragraph.
     layoutRunOvers(),
